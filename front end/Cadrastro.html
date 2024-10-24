@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+    <header>
+        <a href="file:///C:/Users/TIDEV39/Documents/projetos_senai/front%20end/911.html">
+            <img src="https://logosmarcas.net/wp-content/uploads/2021/04/Porsche-Logo.png" alt="Logo da Porsche" class="logo" width="300" height="150"></a>
+        <h1>Porsche</h1>
+        <nav>
+            <ul>
+                <li><a href="#cadastro">Cadastro</a></li>
+                <li><a href="file:///C:/Users/TIDEV39/Documents/projetos_senai/front%20end/911.html">Modelos 911</a></li>
+                <li><a href="file:///C:/Users/TIDEV39/Documents/projetos_senai/front%20end/718.html">Modelos 918</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cadastro">
+        <h2>Cadastro</h2>
+        <form id="cadastroForm" onsubmit="return handleSubmit(event);">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
+
+            <label for="confirmar-senha">Confirmar Senha:</label>
+            <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </section>
+
+    <footer id="contato">
+        <h2>SITE OFICIAL DA PORSCHE</h2>
+        <p>SITE -> <a href="https://www.porsche.com/brazil/pt/"> site porsche</a></p>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            window.location.href = "file:///C:/Users/TIDEV39/Documents/projetos_senai/front%20end/911.html";
+        }
+    </script>
+</body>
+</html>
+
